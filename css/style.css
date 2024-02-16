@@ -16,6 +16,10 @@
 }
 
 /* General */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
     color: var(--main-color);
@@ -72,16 +76,16 @@ nav ul li a:hover:not(a.logo) {
 }
 
 .hero-description-left {
-    width: 30%;
+    width: 35%;
 }
 
 .hero-description-right img {
     position: relative;
-    bottom: -50px;
+    bottom: -100px;
 }
 
 .hero-description-right {
-    width: 70%;
+    width: 65%;
 }
 
 .hero .row-down a {
