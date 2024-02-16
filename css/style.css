@@ -30,7 +30,7 @@ body {
     /* min-width: 1200px; */
 }
 
-a {
+a:not(.link-initial) {
     text-decoration: none;
     color: var(--link-color);
 }
@@ -44,10 +44,18 @@ a {
     display: inline;
 }
 
+a.btn-evi {
+    color: var(--negative-color);
+}
+
 .btn-plan {
     background-color: transparent;
     color: var(--main-color);
     border: 1px solid var(--main-color);
+}
+
+a.btn-plan {
+    color: var(--link-color);
 }
 
 /* Layout */
