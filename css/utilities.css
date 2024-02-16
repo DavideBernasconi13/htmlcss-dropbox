@@ -15,7 +15,7 @@ ul {
 /* ! Layout */
 /* -------------------------------------------------------------------------------- */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -118,6 +118,10 @@ ul {
     margin-bottom: 50px;
 }
 
+.mb-100 {
+    margin-bottom: 70px;
+}
+
 .mr-10 {
     margin-right: 10px;
 }
@@ -171,6 +175,10 @@ ul {
     padding-top: 50px;
 }
 
+.pt-100 {
+    padding-top: 100px;
+}
+
 .pb-20 {
     padding-bottom: 20px;
 }
@@ -181,6 +189,14 @@ ul {
 
 .pb-50 {
     padding-bottom: 50px;
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+.pb-100 {
+    padding-bottom: 100px;
 }
 
 /* -------------------------------------------------------------------------------- */

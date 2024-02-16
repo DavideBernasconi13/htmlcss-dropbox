@@ -20,8 +20,8 @@ body {
     font-family: "Open Sans", sans-serif;
     color: var(--main-color);
     background-color: var(--negative-color);
-    font: 1rem;
-    min-width: 1200px;
+    font-size: 1rem;
+    /* min-width: 1200px; */
 }
 
 a {
@@ -35,7 +35,7 @@ a {
     color: var(--negative-color);
     line-height: 2.5;
     padding: 5px 15px;
-    font-size: 0.85rem;
+    display: inline;
 }
 
 /* Navigation */
@@ -45,10 +45,10 @@ nav {
     padding: 0px 20px;
     height: 80px;
     box-shadow: 0 1px 3px #666;
+    font-size: 0.85rem;
 }
 
 header nav ul li a:not(a.logo):not(a.btn-evi) {
-    font-size: 0.85rem;
     font-weight: 600;
     display: block;
     line-height: 80px;
@@ -66,19 +66,27 @@ nav ul li a:hover:not(a.logo) {
 }
 
 .hero-title {
-    font-size: 2.5rem;
-    font-weight: 900;
+    font-size: 2.3rem;
+    font-weight: 800;
     line-height: 1;
 }
 
 .hero-description-left {
-    width: 40%;
+    width: 30%;
+}
+
+.hero-description-right img {
+    position: relative;
+    bottom: -50px;
 }
 
 .hero-description-right {
-    width: 60%;
-    position: relative;
-    top: 20px;
+    width: 70%;
+}
+
+.hero .row-down a {
+    font-size: 3rem;
+    color: var(--main-color);
 }
 
 /* Call to action */
