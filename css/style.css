@@ -109,6 +109,15 @@ nav ul li a:hover:not(a.logo) {
     color: var(--main-color);
 }
 
+/*Features */
+.features-grid {
+    gap: 15px;
+}
+
+.features-grid-card {
+    width: calc(100% / 3 - 15px);
+}
+
 /* Call to action */
 #call-to-action {
     background-color: var(--secondary-color);
