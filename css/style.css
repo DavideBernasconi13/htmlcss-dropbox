@@ -34,8 +34,6 @@ a {
     background-color: var(--accent-color);
     color: var(--negative-color);
     padding: 10px 5px;
-    align-items: center;
-    line-height: 50px;
 }
 
 /* Navigation */
@@ -46,12 +44,9 @@ nav {
 }
 
 header nav ul li a {
-    padding: 35px 20px;
     font-size: 0.85rem;
     font-weight: 600;
-    border: 1px solid green;
     display: block;
-    height: 80px;
 }
 
 /* Hero */
