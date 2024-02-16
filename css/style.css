@@ -21,6 +21,7 @@ body {
     color: var(--main-color);
     background-color: var(--negative-color);
     font: 1rem;
+    min-width: 1200px;
 }
 
 a {
@@ -28,31 +29,33 @@ a {
     color: var(--link-color);
 }
 
-.evi {
+/* Bottoni */
+.btn-evi {
     background-color: var(--accent-color);
     color: var(--negative-color);
+    padding: 10px 5px;
+    align-items: center;
+    line-height: 50px;
 }
 
 /* Navigation */
 nav {
     background-color: var(--negative-color);
-    height: 80px;
     align-items: center;
+    padding: 0px 20px;
 }
 
-ul li a:not(img) {
-    padding: 5px 20px;
+header nav ul li a {
+    padding: 35px 20px;
     font-size: 0.85rem;
     font-weight: 600;
     border: 1px solid green;
-    display: inline-block;
-    align-items: center;
-    line-height: 80px;
+    display: block;
+    height: 80px;
 }
 
 /* Hero */
 .hero {
-    height: 70vh;
     margin-top: 80px;
     background-color: var(--secondary-color);
 }
@@ -69,6 +72,8 @@ ul li a:not(img) {
 
 .hero-description-right {
     width: 60%;
+    position: relative;
+    top: 20px;
 }
 
 /* Call to action */
