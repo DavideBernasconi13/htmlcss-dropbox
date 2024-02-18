@@ -30,9 +30,20 @@ body {
     /* min-width: 1200px; */
 }
 
-a:not(.link-initial) {
+a {
     text-decoration: none;
     color: var(--link-color);
+}
+
+a.link-initial {
+    color: initial;
+    text-decoration: underline;
+}
+
+span.fill {
+    display: block;
+    width: 100px;
+    border-bottom: 2px solid var(--link-color);
 }
 
 /* Bottoni */
@@ -153,4 +164,40 @@ nav ul li a:hover:not(a.logo) {
 footer {
     background-color: var(--main-color);
     color: var(--negative-color);
+}
+
+footer a {
+    color: var(--negative-color);
+}
+
+footer li {
+    margin-bottom: 20px;
+}
+
+footer .footer-top {
+    width: 100%;
+}
+
+footer .footer-top ul {
+    width: calc(100% / 5);
+}
+
+select {
+    background: transparent;
+    color: var(--negative-color);
+    border: none;
+    /* appearance: none; */
+    font-family: 'Open Sans', sans-serif;
+    transition: all .2s;
+}
+
+select:focus {
+    border: 1px solid var(--negative-color);
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: all .2s;
+}
+
+select:active:not(selected) {
+    color: red;
 }
