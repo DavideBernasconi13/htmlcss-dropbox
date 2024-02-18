@@ -160,6 +160,43 @@ nav ul li a:hover:not(a.logo) {
     align-items: center;
 }
 
+/* FAQ */
+summary {
+    background-color: var(--negative-color);
+    border: none;
+    width: 100%;
+    padding: 20px 10px 20px 0;
+    border-top: 0.5px solid var(--main-color);
+    border-bottom: 0.5px solid var(--main-color);
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: block;
+    position: relative;
+}
+
+summary::after {
+    content: '>';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    transform: rotate(90deg);
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+summary:hover::after {
+    content: '>';
+    transform: rotate(-90deg);
+}
+
+.panel {
+    padding: 10px;
+    background-color: var(--link-color);
+    color: var(--negative-color);
+}
+
 /* Footer */
 footer {
     background-color: var(--main-color);
@@ -186,6 +223,7 @@ select {
     background: transparent;
     color: var(--negative-color);
     border: none;
+    padding: 5px;
     /* appearance: none; */
     font-family: 'Open Sans', sans-serif;
     transition: all .2s;
@@ -199,5 +237,5 @@ select:focus {
 }
 
 select:active:not(selected) {
-    color: red;
+    color: var(--main-color);
 }
