@@ -53,6 +53,10 @@ span.fill {
     border-bottom: 2px solid var(--link-color);
 }
 
+span.fill-full-widht {
+    width: 100%;
+}
+
 /* Bottoni */
 .btn-evi {
     background-color: var(--accent-color);
@@ -66,10 +70,20 @@ a.btn-evi {
     color: var(--negative-color);
 }
 
+a.btn-evi:hover {
+    background-color: var(--contrast-color);
+    transition: all .3s;
+}
+
 .btn-plan {
     background-color: var(--negative-color);
     color: var(--main-color);
     border: 1px solid var(--main-color);
+}
+
+a.btn-plan:hover {
+    background-color: var(--main-color);
+    color: var(--negative-color);
 }
 
 .btn-fw {
@@ -251,7 +265,7 @@ li.main-charatterics-title {
 }
 
 .partner-center img {
-    width: 60%;
+    width: 50%;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -351,13 +365,17 @@ summary {
     border: none;
     width: 100%;
     padding: 20px 10px 20px 0;
-    border-top: 0.5px solid var(--main-color);
-    border-bottom: 0.5px solid var(--main-color);
     text-align: left;
     font-size: 0.8rem;
     font-weight: 700;
     display: block;
     position: relative;
+    /* border-top: 0.5px solid var(--main-color); */
+    border-bottom: 1px solid var(--main-color);
+}
+
+details.first-faq {
+    border-top: 1px solid var(--main-color);
 }
 
 summary::after {
@@ -365,7 +383,7 @@ summary::after {
     font-family: 'Font Awesome 6 Free';
     position: absolute;
     right: 0;
-    top: 20%;
+    top: 25%;
     padding: 10px;
     font-size: 1rem;
     font-weight: 800;
@@ -373,12 +391,12 @@ summary::after {
 
 summary:hover::after {
     content: '\f106';
+    transition: all 0.7s;
 }
 
 .panel {
     padding: 10px;
-    background-color: var(--link-color);
-    color: var(--negative-color);
+    background-color: var(--secondary-color);
 }
 
 /* Footer */
