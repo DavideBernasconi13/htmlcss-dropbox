@@ -62,7 +62,7 @@ span.fill-full-widht {
     background-color: var(--accent-color);
     color: var(--negative-color);
     line-height: 2.5;
-    padding: 5px 12px;
+    padding: 10px 15px;
     display: inline;
 }
 
@@ -124,6 +124,19 @@ header nav ul li a:not(a.logo):not(a.btn-evi) {
 
 nav ul li a:hover:not(a.logo):not(a.btn-evi) {
     border-bottom: 2px solid var(--accent-color);
+}
+
+/* Sub-menu */
+.sub-menu {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    background-color: var(--negative-color);
+    display: none;
+}
+
+nav>ul li:hover .sub-menu {
+    display: block;
 }
 
 /* Hero */
