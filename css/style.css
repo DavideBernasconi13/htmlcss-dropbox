@@ -131,8 +131,12 @@ nav ul li a:hover:not(a.logo):not(a.btn-evi) {
     position: absolute;
     top: 80px;
     width: 100%;
-    background-color: var(--negative-color);
+    background-color: var(--secondary-color);
     display: none;
+}
+
+.sub-menu a {
+    color: var(--contrast-color);
 }
 
 nav>ul li:hover .sub-menu {
