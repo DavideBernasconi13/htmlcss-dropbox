@@ -35,8 +35,12 @@ a {
 }
 
 a.link-initial {
-    color: initial;
+    color: var(--accent-color);
     text-decoration: underline;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 span.fill {
@@ -62,6 +66,13 @@ a.btn-evi {
     background-color: var(--negative-color);
     color: var(--main-color);
     border: 1px solid var(--main-color);
+}
+
+.btn-fw {
+    width: 100%;
+    display: block;
+    line-height: 1;
+    padding: 10px 0px;
 }
 
 a.btn-plan {
@@ -93,7 +104,7 @@ header nav ul li a:not(a.logo):not(a.btn-evi) {
     padding: 0 20px;
 }
 
-nav ul li a:hover:not(a.logo) {
+nav ul li a:hover:not(a.logo):not(a.btn-evi) {
     border-bottom: 2px solid var(--accent-color);
 }
 
@@ -125,6 +136,76 @@ nav ul li a:hover:not(a.logo) {
 .hero .row-down a {
     font-size: 3rem;
     color: var(--main-color);
+}
+
+/* Plan table */
+.plan-table {
+    gap: 10px;
+}
+
+.plan-table-column {
+    border: 1px solid var(--main-color);
+    width: calc(100% / 3 - 10px);
+}
+
+.plan-table-full-width {
+    width: 100%;
+}
+
+.plan-table-header {
+    padding: 5px 0;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.plan-table-body {
+    padding: 10px 20px;
+}
+
+.plan-table-body .price {
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.plan-table-body .price>span {
+    color: var(--link-color);
+    font-weight: 400;
+}
+
+li.list-icon {
+    list-style-type: none;
+    padding-left: 1.2em;
+    text-indent: -1.5em;
+    margin-bottom: 20px;
+}
+
+.list-icon::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.user::before {
+    content: '\f007';
+}
+
+.space::before {
+    content: '\f07b';
+}
+
+.feat::before {
+    content: '\f1e0'
+}
+
+.check::before {
+    content: '\f00c';
+    font-weight: 800;
+    color: var(--accent-color);
+}
+
+li.main-charatterics-title {
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 /*Features */

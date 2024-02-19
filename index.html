@@ -63,12 +63,107 @@
     <!-- Main -->
     <main class="debug">
         <section id="pricing" class="container-small pt-100 debug">
-            <h2 class="mb-50">Trova il piano business che fa per te</h2>
+            <h2 class="mt-20 mb-50">Trova il piano business che fa per te</h2>
             <div class="select d-flex mb-50">
-                <input type="radio" name="type-plan" id="" value="moth">
-                <label for="type-plan">Fatturazione mensile</label>
+                <input type="radio" name="type-plan" id="" value="moth" checked="checked">
+                <label for="type-plan" class="mr-20">Fatturazione mensile</label>
                 <input type="radio" name="type-plan" id="" value="year">
                 <label for="type-plan">Fatturazione annuale</label>
+            </div>
+            <!-- Plan table *3 item -->
+            <div class="plan-table d-flex justify-content-s-b mb-20">
+                <div class="plan-table-column">
+                    <div class="plan-table-header tac">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <span>Singolo</span>
+                    </div>
+                    <div class="plan-table-body">
+                        <h3 class="mt-10 mb-20">Professional</h3>
+                        <p class="price">12.00 € <br>
+                            <span class="time">/ mese</span>
+                        </p>
+                        <ul class="plan-table-characteristics">
+                            <li class="list-icon user">1 utente</li>
+                            <li class="list-icon space">5 TB di spazio di archiviazione sicuro</li>
+                            <li class="list-icon feat">Funzioni di produttività premium e condivisione file semplice e
+                                sicura</li>
+                        </ul>
+                        <a href="#" class="btn-evi btn-fw pt-10 pb-10 tac">Prova gratis per 30 giorni</a>
+                        <p class="mt-30 mb-30">oppure <a href="#" class="link-initial">acquista ora</a></p>
+                        <span class="fill"></span>
+                        <ul class="main-charatterics mt-30">
+                            <li class="main-charatterics-title">Punti salienti del piano</li>
+                            <li class="list-icon check">Invia file fino a 100 GB con Dropbox Transfert</li>
+                            <li class="list-icon check">Cartelle offline su dispositivi mobili</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plan-table-column">
+                    <div class="plan-table-header tac">
+                        <span><i class="fa-solid fa-users"></i></span>
+                        <span>Team</span>
+                    </div>
+                    <div class="plan-table-body">
+                        <h3 class="mt-10 mb-20">Advanced</h3>
+                        <p class="price">18.00 € <br>
+                            <span class="time">utente / mese</span>
+                        </p>
+                        <ul class="plan-table-characteristics">
+                            <li class="list-icon user">3 o più utenti</li>
+                            <li class="list-icon space">Tutto lo spazio di cui ha bisogno il tuo team</li>
+                            <li class="list-icon feat">Sofisticate funzioni di controllo e per tenere al sicuro tutti i
+                                file del tuo team</li>
+                        </ul>
+                        <a href="#" class="btn-evi btn-fw pt-10 pb-10 tac">Prova gratis per 30 giorni</a>
+                        <p class="mt-30 mb-30">oppure <a href="#" class="link-initial">acquista ora</a></p>
+                        <span class="fill"></span>
+                        <ul class="main-charatterics mt-30">
+                            <li class="main-charatterics-title">Punti salienti del piano</li>
+                            <li class="list-icon check">Nessun limite di spazio per i file</li>
+                            <li class="list-icon check">Cartelle offline su dispositivi mobili</li>
+                            <li class="list-icon check">Risparmio del 50% rispetto alle iscrizioni singole</li>
+                            <li class="list-icon check">Possibilità di inserire nuovi membri del team</li>
+                            <li class="list-icon check">Gestione dei permessi in base ai ruoli</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="plan-table-column">
+                    <div class="plan-table-header tac">
+                        <span><i class="fa-solid fa-users"></i></span>
+                        <span>Azienda</span>
+                    </div>
+                    <div class="plan-table-body">
+                        <h3 class="mt-10 mb-20">Enterprise</h3>
+                        <p class="price">Contattaci<br>
+                            <span class="time">-</span>
+                        </p>
+                        <ul class="plan-table-characteristics">
+                            <li class="list-icon user">10 o più utenti</li>
+                            <li class="list-icon space">Soluzioni personalizzabili per la tua azienda</li>
+                            <li class="list-icon feat">Assistenza personalizzata per aiutare gli amministratori in una
+                                gestione su larga scala</li>
+                        </ul>
+                        <a href="#" class="btn-evi btn-fw pt-10 pb-10 tac">Prova gratis per 30 giorni</a>
+                        <p class="mt-30 mb-30">oppure <a href="#" class="link-initial">acquista ora</a></p>
+                        <span class="fill"></span>
+                        <ul class="main-charatterics mt-30">
+                            <li class="main-charatterics-title">Punti salienti del piano</li>
+                            <li class="list-icon check">Cartelle offline su dispositivi mobili</li>
+                            <li class="list-icon check">Servizio assistenza 24/h</li>
+                            <li class="list-icon check">Possibilità di personalizzazione totale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Plan enterprise -->
+            <div class="plan-table-column plan-table-full-width d-flex flex-wrap">
+                <div class="plan-table-header tac">
+                    <span><i class="fa-solid fa-building"></i></span><span> Team</span>
+                </div>
+                <div class="plan-table-body">
+                    <div class="right-content">right</div>
+                    <div class="left-content">left</div>
+                </div>
             </div>
         </section>
         <section id="partner-description" class="container-small d-flex flex-direction-row-r mt-100 mb-100">
@@ -132,7 +227,7 @@
             </div>
         </section>
         <section id="info" class="container-small pt-100 pb-100">
-            <div class="left-content">
+            <div class="right-content">
                 <h2 class="mb-70">Più di 500.000 team utilizzano Dropbox Business</h2>
                 <a href="#" class="link-initial">Scopri di più sui nostri clienti</a>
             </div>
