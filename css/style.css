@@ -26,7 +26,7 @@ body {
     color: var(--main-color);
     background-color: var(--negative-color);
     font-size: 0.85rem;
-    /* min-width: 1200px; */
+    min-width: 1200px;
 }
 
 a {
@@ -41,6 +41,10 @@ a.link-initial {
 
 h2 {
     font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 span.fill {
@@ -150,6 +154,7 @@ nav ul li a:hover:not(a.logo):not(a.btn-evi) {
 
 .plan-table-full-width {
     width: 100%;
+    flex-direction: column;
 }
 
 .plan-table-header {
