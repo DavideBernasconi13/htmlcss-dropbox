@@ -120,6 +120,7 @@ header nav ul li a:not(a.logo):not(a.btn-evi) {
     display: block;
     line-height: 80px;
     padding: 0 20px;
+    border: 1px solid transparent;
 }
 
 nav ul li a:hover:not(a.logo):not(a.btn-evi) {
@@ -131,7 +132,7 @@ nav ul li a:hover:not(a.logo):not(a.btn-evi) {
     position: absolute;
     top: 80px;
     width: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--negative-color);
     display: none;
 }
 
@@ -307,6 +308,9 @@ li.main-charatterics-title {
     background: var(--secondary-color);
 }
 
+/* -------------------------------------------------------------------------------- */
+/* ! Loghi */
+/* -------------------------------------------------------------------------------- */
 /* Box loghi */
 .partner-logo {
     min-height: 200px;
@@ -325,6 +329,10 @@ li.main-charatterics-title {
     background-color: var(--brand-color-three);
 }
 
+.brand-two:hover {
+    border: 10px solid #61c7ef;
+}
+
 .brand-three {
     background-color: var(--contrast-color);
 }
@@ -335,6 +343,10 @@ li.main-charatterics-title {
 
 .brand-four {
     background-color: var(--brand-color-four);
+}
+
+.brand-four:hover {
+    border: 10px solid #f47676;
 }
 
 .brand-five {
